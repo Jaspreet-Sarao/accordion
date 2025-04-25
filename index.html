@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Accordion</title>
+
+</head>
+<body>
+  <main class="container">
+    <h1>JavaScript Accordion</h1>
+    
+    <div class="accordion" role="presentation">
+      <article class="accordion-item">
+        <h2>
+          <button class="accordion-button" 
+                  aria-expanded="false" 
+                  aria-controls="section-1"
+                  id="accordion-button-1">
+            Section 1
+          </button>
+        </h2>
+        <div class="accordion-section" 
+             id="section-1" 
+             role="region" 
+             aria-labelledby="accordion-button-1">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Nullam auctor, nisl eget ultricies tincidunt.</p>
+        </div>
+      </article>
+
+      <article class="accordion-item">
+        <h2>
+          <button class="accordion-button" 
+                  aria-expanded="false" 
+                  aria-controls="section-2"
+                  id="accordion-button-2">
+            Section 2
+          </button>
+        </h2>
+        <div class="accordion-section" 
+             id="section-2" 
+             role="region" 
+             aria-labelledby="accordion-button-2">
+          <p>Vestibulum ante ipsum primis in faucibus orci luctus.</p>
+          <p>Etiam ultricies nisi vel augue.</p>
+        </div>
+      </article>
+
+      <article class="accordion-item">
+        <h2>
+          <button class="accordion-button" 
+                  aria-expanded="false" 
+                  aria-controls="section-3"
+                  id="accordion-button-3">
+            Section 3
+          </button>
+        </h2>
+        <div class="accordion-section" 
+             id="section-3" 
+             role="region" 
+             aria-labelledby="accordion-button-3">
+          <p>Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <script src="script.js/script.js"></script>
+</body>
+</html>
